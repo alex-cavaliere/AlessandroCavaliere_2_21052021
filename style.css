@@ -6,9 +6,12 @@ body
     margin-right: 30px;
     
 }
-#logo_reservia
+.display
 {
     display: flex;
+}
+#logo_reservia
+{
     height: 60px;
     width: 80px;
     position: relative;
@@ -16,7 +19,6 @@ body
 }
 nav
 {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     position: relative;
@@ -24,9 +26,7 @@ nav
 }
 ul
 {
-    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     justify-content: space-between;
     justify-content: space-around;
     list-style-type: none;
@@ -84,7 +84,6 @@ label i
 
 #filtres
 {
-    display: flex;
     justify-content: flex-start;
     width: 80%;
     margin-top: 20px;
