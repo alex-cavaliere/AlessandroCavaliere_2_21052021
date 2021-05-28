@@ -9,6 +9,7 @@ body
 .display
 {
     display: flex;
+    flex-direction: row;
 }
 #logo_reservia
 {
@@ -19,14 +20,12 @@ body
 }
 nav
 {
-    flex-direction: row;
     justify-content: flex-end;
     position: relative;
     top: -30px;
 }
 ul
 {
-    flex-direction: row;
     justify-content: space-between;
     justify-content: space-around;
     list-style-type: none;
