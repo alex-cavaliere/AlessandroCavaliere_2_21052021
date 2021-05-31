@@ -6,9 +6,8 @@ body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: large;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+    width: 1240px;
+    margin: auto;
 }
 .display
 {
@@ -130,16 +129,14 @@ label i
     border-radius: 100%;
     color:#0065FC;
 }
-#section_1
+#onglets
 {   
-    flex-direction:column;
     flex-wrap: wrap;
-    height: 500px;
 }
 .hebergements img
 {
-    height: 180px;
-    width: 220px;
+    height: 160px;
+    width: 200px;
     border: 6px solid white;
     border-radius: 20px;
     position: relative;
@@ -149,23 +146,24 @@ label i
 {
     flex-direction: column;
     background-color: #F2F2F2;
+    border-radius: 20px;
     width: 900px;
+    flex-wrap: wrap;
 }
-#hebergements_marseille h2
+#section_1 h2
 {
     margin:30px 0px 10px 30px;
     font-weight: bold;
     font-size: 20px;
 }
-figcaption
+.hebergements figcaption
 {
-    display: block;
     position: absolute;
     margin-top: -90px;
     margin-left: -9px;
     font-size: 15px;
     background-color: white;
-    width: 220px;
+    width: 200px;
     height: 80px;
     text-align: justify;
 
@@ -179,8 +177,30 @@ figcaption h3, figcaption p, figcaption span
 }
 #afficher_plus
 {
-    margin: -20px 0px 50px 30px;
+    margin: 20px 0px 50px 30px;
 }
-
-
-
+aside
+{
+    background-color: #F2F2F2;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+aside img
+{
+    position: relative;
+    height: 120px;
+    width: 280px;
+    border: 6px solid white;
+    border-radius: 20px;
+    margin-left: -10px;   
+}
+aside figcaption
+{
+    font-size: 15px;
+    position: absolute;
+    width: 177px;
+    height: 120px;
+    margin-left: 100px;
+    margin-top: -130px;
+    background-color: white;
+}
