@@ -5,6 +5,9 @@
 body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+#main
+{
     font-size: large;
     width: 1300px;
     margin: auto;
@@ -27,6 +30,7 @@ nav
 }
 a
 {
+    color: black;
     text-decoration: none;
 }
 ul
@@ -50,7 +54,7 @@ nav strong
 {
     color:#0065FC;
 }
-li:hover
+nav li:hover
 {
     text-decoration: overline;
     color:#0065FC;
@@ -83,8 +87,6 @@ label i
 {
    border:1px solid black;
 }
-
-
 #filtres
 {
     justify-content: flex-start;
@@ -116,6 +118,10 @@ label i
 {
     color:#0065FC;
     width: 20px;
+}
+#filtres p:hover
+{
+    border: 3px solid rgba(128,128,128,0.4);
 }
 #info i
 {
@@ -170,7 +176,6 @@ figure
     font-size: 12px;
     background-color:white;
     text-align: justify;
-
 }
 #section_1 h3, #section_1 p, #section_1 span
 {
@@ -249,4 +254,16 @@ aside figcaption
     height: 400px;
     width: 255px;
     border-radius: 20px 20px 0px 0px;
+}
+footer
+{
+    background-color: #F2F2F2;
+    text-align: justify;
+    font-size: 90%;
+}
+footer h5
+{
+    margin-left: 40px;
+    font-size: 100%;
+    font-weight: bold;
 }
