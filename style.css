@@ -21,17 +21,28 @@ body
     position: relative;
     height: 50px;
     width: 70px;
-    top: 30px;
+    top: 45px;
 }
 nav
 {
     justify-content: flex-end;
-    top: -30px;
 }
 a
 {
-    color: black;
+    color: inherit;
     text-decoration: none;
+}
+.etoile_vide
+{
+    color: #3533333f;
+}
+.fleche
+{
+    color: black;
+}
+span
+{
+    color:#0065FC;
 }
 ul
 {
@@ -39,15 +50,17 @@ ul
     list-style-type: none;
     width: 400px;
 }
+h1, h2, h3, h5, #champ_de_recherche
+{
+    font-weight: bold;
+}
 h1
 {
     font-size: 23px;
-    font-weight: bold;
 }
 h2
 {
     font-size: 18px;
-    font-weight: normal;
     margin-top: -10px;
 }
 nav strong
@@ -56,7 +69,7 @@ nav strong
 }
 nav li:hover
 {
-    text-decoration: overline;
+    text-decoration-line: overline;
     color:#0065FC;
 }
 label i
@@ -69,8 +82,8 @@ label i
 }
 #champ_de_recherche
 {
-   height: 40px;
-   border:1px solid #F2F2F2; 
+    height: 40px;
+    border:1px solid #F2F2F2; 
 }
 #button
 {
@@ -132,6 +145,8 @@ label i
 }
 #onglets
 {   
+    height: 600px;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 #section_1 figure
@@ -147,7 +162,8 @@ figure
 {
     background-color: white;
     height: 170px;
-    width: 200px;
+    width: 220px;
+    margin-left: 32px;
 }
 .hebergements img
 {
@@ -167,7 +183,6 @@ figure
 #section_1 h2, #section_2 h2
 {
     margin:30px 0px 10px 30px;
-    font-weight: bold;
     font-size: 20px;
 }
 .hebergements figcaption
@@ -187,8 +202,9 @@ figure
 #afficher_plus
 {
     font-weight: bold;
-    padding-top: 20px;
-    padding-left: 20px;
+    position: relative;
+    bottom: 140px;
+    padding-left: 30px;
 }
 aside
 {
@@ -241,12 +257,12 @@ aside figcaption
 #activites h5
 {
     margin-bottom: 20px;
-    position: relative;
     top: -10px;
 }
 #activites figcaption
 {
     margin-left: 10px;
+    padding-bottom: 1px;
 }
 #section_2 img
 {
@@ -265,5 +281,8 @@ footer h5
 {
     margin-left: 40px;
     font-size: 100%;
-    font-weight: bold;
+}
+footer article
+{
+    margin-left: 40px;
 }
