@@ -74,14 +74,15 @@ nav li:hover
 }
 label i
 {
-    height: 25px;
+    height: 26px;
     background-color:#F2F2F2;
-    padding: 10px 15px 6px 15px;
+    padding: 9px 15px 6px 15px;
     margin-right: -5px;
     border-radius:10px 0px 0px 10px;
 }
 #champ_de_recherche
 {
+    text-indent: 5px;
     height: 40px;
     border:1px solid #F2F2F2; 
 }
@@ -157,6 +158,10 @@ figure
 {
     box-shadow: 1px 1px 5px 1px grey;
     border-radius: 20px;
+}
+figure:hover
+{
+    transform: scale(1.05);
 }
 #onglets figure
 {
