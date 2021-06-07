@@ -9,7 +9,7 @@ body
 #main
 {
     font-size: large;
-    width: 1300px;
+    width: auto;
     margin: auto;
 }
 .display
@@ -151,8 +151,7 @@ label i
 }
 #onglets
 {   
-    height: 600px;
-    flex-direction: column;
+    height: auto;
     flex-wrap: wrap;
 }
 #section_1 figure
@@ -213,8 +212,8 @@ figure:hover
 {
     font-weight: bold;
     position: relative;
-    bottom: 140px;
     padding-left: 30px;
+    padding-top: 30px;
 }
 aside
 {
@@ -263,6 +262,7 @@ aside figcaption
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
+    width: 250px;
 }
 #activites h5
 {
@@ -273,12 +273,13 @@ aside figcaption
 {
     margin-left: 10px;
     padding-bottom: 1px;
+    width: auto;
 }
 #section_2 img
 {
     object-fit: cover;
     height: 400px;
-    width: 255px;
+    width: 250px;
     border-radius: 20px 20px 0px 0px;
 }
 footer
@@ -296,6 +297,46 @@ footer h5
 footer article
 {
     margin-left: 40px;
+}
+@media screen and (max-device-width: 1024px)
+{
+    #hebergements_marseille
+    {
+        height: 800px;
+    }  
+    #activites_marseille, footer
+    {
+        overflow-x: scroll;
+    }
+    footer
+    {
+        width: auto;
+    }
+}
+@media screen and (max-device-width: 768px)
+{
+    #section_1
+    {
+        flex-direction: column;
+    }
+    #hebergements_marseille
+    {
+        height: auto;
+        width: 100%;
+    }  
+    aside
+    {
+        margin-top: 20px;
+        margin-left: 1px;
+    }
+    #activites_marseille
+    {
+        overflow-x: scroll;
+    }
+    #filtres
+    {
+        flex-wrap: wrap;
+    }
 }
 @media screen and (max-device-width: 425px)
 {
@@ -390,16 +431,6 @@ footer article
         width: auto;
         height: auto;
     }
-    #afficher_plus
-    {
-        position: relative;
-        top: 30px;
-    }
-    #section_2
-    {
-        position: relative;
-        margin-top: 820px;
-    }
     #hebergements_marseille
     {
         width: auto;
@@ -410,7 +441,7 @@ footer article
     }
     #activites img
     {
-        width: 100%;
+        width: 329px;
         height: 150px;
     }
 }
