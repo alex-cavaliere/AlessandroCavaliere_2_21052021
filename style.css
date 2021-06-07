@@ -77,9 +77,11 @@ nav li:hover
 }
 label i
 {
+    position: relative;
+    bottom: 1px;
     height: 26px;
     background-color:#F2F2F2;
-    padding: 9px 15px 6px 15px;
+    padding: 8px 15px 6px 15px;
     margin-right: -5px;
     border-radius:10px 0px 0px 10px;
 }
@@ -284,6 +286,7 @@ footer
     background-color: #F2F2F2;
     text-align: justify;
     font-size: 90%;
+    width: 1400px;
 }
 footer h5
 {
@@ -293,4 +296,111 @@ footer h5
 footer article
 {
     margin-left: 40px;
+}
+@media screen and (max-device-width: 425px)
+{
+    body, #main
+    {
+        width: auto;
+        font-size: 1.0em; 
+    }
+    #main h1, header p, #recherche_ville
+    {
+        text-align: center;
+    }
+    #recherche_ville
+    {
+        margin-top: 40px;
+        margin-bottom: -20px;
+    }
+    footer
+    {
+        flex-direction: column;
+        margin-top: 30px;
+        width: auto;
+    }
+    #filtres
+    {
+        flex-direction: column;
+        width: 260px;
+    }
+    #filtres p
+    {
+        font-size: 0.9em;
+    }
+    nav ul
+    {
+        flex-wrap: wrap-reverse;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 120px;
+    }
+    #logo_reservia
+    {
+        position: absolute;
+        top: 54px;
+    }
+    .li_1
+    {
+        position: relative;
+        text-align: center;
+        top: 60px;
+        right: 30px;
+       
+    }
+    .li_2
+    {
+        position: relative;
+        text-align: center;
+        top: 60px;
+        left: 60px;
+        
+    }
+    label i
+    {
+        bottom: 3px;
+    }
+    #section_1 
+    {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 400px;
+    }
+    aside
+    {
+        border-radius: 0em;
+        width: 100%;
+        margin: auto;
+    }
+    #onglets_aside figure, #onglets figure, #activites_marseille figure
+    {
+        width: 320px;
+    }
+    #hebergements_marseille
+    {
+        background-color: white;
+    }
+    #onglets
+    {
+        width: auto;
+        height: auto;
+    }
+    #afficher_plus
+    {
+        position: relative;
+        top: 30px;
+    }
+    #section_2
+    {
+        position: relative;
+        margin-top: 820px;
+    }
+    #activites
+    {
+        height: auto;
+    }
+    #activites img
+    {
+        width: 100%;
+        height: 150px;
+    }
 }
