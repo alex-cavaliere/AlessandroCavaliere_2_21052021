@@ -426,22 +426,22 @@ footer article
     {
         background-color: white;
     }
-    #onglets
+    #onglets, #onglets_activites
     {
         width: auto;
         height: auto;
     }
-    #hebergements_marseille
+    #hebergements_marseille, #activites, #activites_figure
     {
         width: auto;
     }
-    #activites
+    #activites, #activites_figure
     {
         height: auto;
     }
     #activites img
     {
-        width: 329px;
+        width: 100%;
         height: 150px;
     }
 }
