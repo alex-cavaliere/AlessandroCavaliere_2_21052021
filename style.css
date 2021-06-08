@@ -141,7 +141,7 @@ label i
 }
 #filtres p:hover
 {
-    border: 3px solid rgba(128,128,128,0.4);
+   transform: scale(1.05); 
 }
 #info i
 {
@@ -355,6 +355,10 @@ footer article
     {
         width: auto;
         font-size: 1.0em; 
+    }
+    nav li:hover
+    {
+        border: none;
     }
     #main h1, header p, #recherche_ville
     {
