@@ -290,7 +290,7 @@ aside figcaption
 {
     object-fit: cover;
     height: 400px;
-    width: 250px;
+    width: 260px;
     border-radius: 20px 20px 0px 0px;
 }
 footer
@@ -349,7 +349,7 @@ footer article
         flex-wrap: wrap;
     }
 }
-@media screen and (max-device-width: 425px)
+@media screen and (max-device-width: 500px)
 {
     body, #main
     {
