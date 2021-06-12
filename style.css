@@ -6,11 +6,14 @@ body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
+header
+{
+    max-width: 1400px;
+    margin: auto;
+}
 #main
 {
     font-size: large;
-    width: auto;
-    margin: auto;
 }
 .display
 {
@@ -85,6 +88,12 @@ label i
     margin-right: -5px;
     border-radius:10px 0px 0px 10px;
 }
+#search
+{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #champ_de_recherche
 {
     text-indent: 5px;
@@ -157,7 +166,9 @@ label i
 }
 #section_1
 {
-    justify-content: space-between;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #section_1 figure
 {
@@ -190,7 +201,7 @@ figure:hover
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 900px;
+    max-width: 900px;
     flex-wrap: wrap;
     height: auto;
 }
@@ -205,7 +216,6 @@ figure:hover
     font-size: 12px;
     background-color:white;
     text-align: justify;
-    width: auto;
 }
 #section_1 h3, #section_1 p, #section_1 span
 {
@@ -226,8 +236,8 @@ aside
 {
     flex-direction: column;
     background-color: #F2F2F2;
-    margin-left: 30px;
     border-radius: 20px;
+    margin-left: auto;
 }
 aside h2 i
 {
@@ -257,28 +267,32 @@ aside figcaption
     margin-top: -124px;
     background-color: white;
     border: 6px solid white;
+    border-radius: 20px;
 }
 #section_2
 {
     flex-direction: column;
+    align-content: center;
     margin-top: 40px;
-    margin-left: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
 }
 #activites 
 {
     flex-direction: column;
     flex-wrap: wrap;
     height: 600px;
-    width: 250px;
-}
-#activites_marseille
-{
     width: auto;
 }
 #activites h5
 {
     margin-bottom: 20px;
     top: -10px;
+}
+#activites figure
+{
+    width: 260px;
 }
 #activites figcaption
 {
@@ -298,51 +312,53 @@ footer
     background-color: #F2F2F2;
     text-align: justify;
     font-size: 90%;
-    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer article
+{
+    width: 350px;
 }
 footer h5
 {
     margin-left: 40px;
     font-size: 100%;
 }
-footer article
-{
-    margin-left: 40px;
-}
 @media screen and (max-device-width: 1024px)
 {
-    #activites_marseille, footer
+    #activites
     {
-        overflow-x: scroll;
+        height: 800px;
     }
-    footer
-    {
-        width: auto;
-    }
-}
-@media screen and (max-device-width: 768px)
-{
     #section_1
     {
+        margin-left: 10px;
         flex-direction: column;
     }
-    #hebergements_marseille
-    {
-        width: auto;
-    }  
     aside
     {
-        margin-top: 20px;
-        margin-left: 1px;
+       margin-top: 20px;
+       max-width: 900px;
+       margin-left: 0px; 
     }
     #onglets_aside
     {
         display: flex;
         flex-wrap: wrap;
     }
-    #activites_marseille
+}
+@media screen and (max-device-width: 768px)
+{
+    #hebergements_marseille
     {
-        overflow-x: scroll;
+        width: auto;
+    }  
+    #activites img
+    {
+        height: 150px;
     }
     #filtres
     {
