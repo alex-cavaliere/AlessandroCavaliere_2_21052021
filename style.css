@@ -436,7 +436,7 @@ footer h5
     .li_1, .li_2
     {
         position: relative;
-        right: 10px;
+        margin: auto;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 20px;
