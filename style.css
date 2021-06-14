@@ -370,6 +370,10 @@ footer h5
 }
 @media screen and (max-device-width: 768px)
 {
+    body
+    {
+        position: static;
+    }
     #hebergements_marseille
     {
         width: auto;
@@ -422,7 +426,7 @@ footer h5
         position: relative;
         right: 10px;
         flex-wrap: wrap-reverse;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
     nav strong
     {
