@@ -386,6 +386,10 @@ footer h5
     {
         justify-content: flex-start;
     }
+    .populaires
+    {
+        width: 100%;
+    }
     footer article
     {
         width: 90%;
@@ -474,7 +478,7 @@ footer h5
     }
     #onglets_aside figure, #onglets figure, #activites_marseille figure
     {
-        width: 220px;
+        width: 230px;
     }
     #onglets_aside figcaption, #onglets figcaption, #activites_marseille figcaption
     {
