@@ -358,6 +358,11 @@ footer h5
         display: flex;
         flex-wrap: wrap;
     }
+    .populaires:last-child 
+    {
+        position: relative;
+        right: 185px;
+    }
     footer
     {
         flex-wrap: nowrap;
@@ -402,12 +407,6 @@ footer h5
         margin-top: 40px;
         margin-bottom: -20px;
     }
-    footer
-    {
-        flex-direction: column;
-        margin-top: 30px;
-        width: auto;
-    }
     #filtres
     {
         flex-direction: column;
@@ -415,6 +414,7 @@ footer h5
     }
     #filtres p
     {
+        width: 150px;
         font-size: 0.9em;
     }
     nav ul
@@ -467,6 +467,10 @@ footer h5
         width: 100%;
         margin: auto;
     }
+    .populaires:last-child
+    {
+        left: 0px;
+    }
     #onglets_aside figure, #onglets figure, #activites_marseille figure
     {
         width: 250px;
@@ -500,6 +504,9 @@ footer h5
     }
     footer
     {
+        flex-direction: column;
+        margin-top: 30px;
+        width: auto;
         align-items: center;
     }
 }
