@@ -367,10 +367,6 @@ footer h5
     {
         flex-wrap: nowrap;
     }
-    footer ul
-    {
-        width: 60%;
-    }
 }
 @media screen and (max-device-width: 768px)
 {
