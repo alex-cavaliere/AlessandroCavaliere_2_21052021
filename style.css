@@ -342,26 +342,26 @@ footer h5
     {
         margin-left: 10px;
         flex-direction: column;
+        align-items: center;
     }
     #onglets, #onglets_aside
     {
         justify-content: center;
     }
-    aside
-    {
-       margin-top: 20px;
-       max-width: 900px;
-       margin-left: 0px; 
-    }
     #onglets_aside
     {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .populaires:last-child 
+    aside
     {
-        position: relative;
-        right: 185px;
+        margin-top: 20px;
+        max-width: 900px;
+        margin-left: 0px; 
+    }
+    #onglets_aside
+    {
+        flex-wrap: wrap;
     }
     footer
     {
@@ -436,6 +436,7 @@ footer h5
     .li_1, .li_2
     {
         position: relative;
+        right: 10px;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 20px;
@@ -467,13 +468,9 @@ footer h5
         width: 100%;
         margin: auto;
     }
-    .populaires:last-child
-    {
-        left: 0px;
-    }
     #onglets_aside figure, #onglets figure, #activites_marseille figure
     {
-        width: 250px;
+        width: 220px;
     }
     #onglets_aside figcaption, #onglets figcaption, #activites_marseille figcaption
     {
