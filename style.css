@@ -216,6 +216,7 @@ figure:hover
     font-size: 12px;
     background-color:white;
     text-align: justify;
+    border-radius: 20px;
 }
 #section_1 h3, #section_1 p, #section_1 span
 {
@@ -239,10 +240,13 @@ aside
     border-radius: 20px;
     margin-left: auto;
 }
+aside h2
+{
+    justify-content: space-between;
+}
 aside h2 i
 {
-    position: relative;
-    left: 60px;
+    margin-right: 20px;
 }
 aside figure
 {
@@ -281,6 +285,7 @@ aside figcaption
 #activites 
 {
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     height: 600px;
     width: auto;
@@ -338,6 +343,10 @@ footer h5
         margin-left: 10px;
         flex-direction: column;
     }
+    #onglets, #onglets_aside
+    {
+        justify-content: center;
+    }
     aside
     {
        margin-top: 20px;
@@ -348,6 +357,10 @@ footer h5
     {
         display: flex;
         flex-wrap: wrap;
+    }
+    footer
+    {
+        flex-wrap: nowrap;
     }
 }
 @media screen and (max-device-width: 768px)
@@ -360,9 +373,13 @@ footer h5
     {
         height: 150px;
     }
-    #filtres
+    #filtres, footer
     {
         flex-wrap: wrap;
+    }
+    footer
+    {
+        justify-content: flex-start;
     }
 }
 @media screen and (max-device-width: 500px)
@@ -394,7 +411,7 @@ footer h5
     #filtres
     {
         flex-direction: column;
-        width: 260px;
+        width: 240px;
     }
     #filtres p
     {
@@ -402,30 +419,32 @@ footer h5
     }
     nav ul
     {
+        position: relative;
+        right: 10px;
         flex-wrap: wrap-reverse;
-        border-bottom: 3px solid #F2F2F2;
         padding-bottom: 120px;
+    }
+    nav strong
+    {
+        margin-left: 240px;
     }
     #logo_reservia
     {
         position: absolute;
         top: 54px;
     }
-    .li_1
+    .li_1, .li_2
     {
         position: relative;
         text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 20px;
         top: 60px;
-        right: 30px;
-       
+        width: 50%;
     }
-    .li_2
+    .li_1:hover, .li_2:hover
     {
-        position: relative;
-        text-align: center;
-        top: 60px;
-        left: 60px;
-        
+        border-bottom: 3px solid #0065FC;
     }
     label i
     {
@@ -437,6 +456,10 @@ footer h5
         flex-direction: column-reverse;
         height: auto;
         width: auto;
+    }
+    aside h2
+    {
+        justify-content: space-between;
     }
     aside
     {
@@ -474,5 +497,9 @@ footer h5
     {
         width: 100%;
         height: 150px;
+    }
+    footer
+    {
+        align-items: center;
     }
 }
