@@ -77,6 +77,8 @@ nav li:hover
 {
     border-top: 2px solid #0065FC;
     color:#0065FC;
+    margin-top: -2px;
+    
 }
 label i
 {
@@ -169,6 +171,7 @@ label i
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
+    justify-content: space-between;
 }
 #section_1 figure
 {
@@ -238,7 +241,6 @@ aside
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: auto;
 }
 aside h2
 {
@@ -297,7 +299,7 @@ aside figcaption
 }
 #activites figure
 {
-    width: 260px;
+    max-width: 260px;
 }
 #activites figcaption
 {
@@ -319,7 +321,7 @@ footer
     font-size: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1440px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -332,7 +334,7 @@ footer h5
     margin-left: 40px;
     font-size: 100%;
 }
-@media screen and (max-device-width: 1024px)
+@media screen and (max-width: 1280px)
 {
     #activites
     {
@@ -368,7 +370,7 @@ footer h5
         flex-wrap: nowrap;
     }
 }
-@media screen and (max-device-width: 768px)
+@media screen and (max-width: 768px)
 {
     #hebergements_marseille
     {
@@ -384,20 +386,21 @@ footer h5
     }
     footer
     {
-        justify-content: flex-start;
-    }
-    .populaires
-    {
-        width: 100%;
+        justify-content: flex-start;   
+        margin: auto;
     }
     footer article
     {
-        width: 90%;
+        max-width: 300px;
+    }
+    footer article
+    {
+        width: 80%;
     }
 }
-@media screen and (max-device-width: 500px)
+@media screen and (max-width: 500px)
 {
-    body, #main
+    body
     {
         width: auto;
         font-size: 1.0em; 
@@ -415,6 +418,10 @@ footer h5
         margin-top: 40px;
         margin-bottom: -20px;
     }
+    #button
+    {
+        width: 10px;
+    }
     #filtres
     {
         flex-direction: column;
@@ -422,24 +429,19 @@ footer h5
     }
     #filtres p
     {
-        width: 150px;
+        width: 170px;
         font-size: 0.9em;
     }
-    nav ul
-    {
-        position: relative;
-        right: 10px;
-        flex-wrap: wrap-reverse;
-        padding-bottom: 80px;
-    }
-    nav strong
-    {
-        margin-left: 240px;
-    }
+   
     #logo_reservia
     {
         position: absolute;
         top: 54px;
+    }
+    .li_3
+    {
+        position: absolute;
+        right: 10px;
     }
     .li_1, .li_2
     {
@@ -448,8 +450,14 @@ footer h5
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 20px;
+        margin-bottom: 60px;
+        right: 20px;
         top: 60px;
-        width: 50%;
+        width: 100%;
+    }
+    header ul
+    {
+        justify-content: space-between;
     }
     .li_1:hover, .li_2:hover
     {
@@ -475,6 +483,10 @@ footer h5
         border-radius: 0em;
         width: 100%;
         margin: auto;
+    }
+    #onglets_aside
+    {
+        justify-content: center;    
     }
     #onglets_aside figure, #onglets figure, #activites_marseille figure
     {
