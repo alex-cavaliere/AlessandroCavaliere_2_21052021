@@ -113,10 +113,6 @@ label i
     padding-right: 20px;
     padding-left: 20px;
 }
-#button:hover
-{
-   border:1px solid black;
-}
 #filtres
 {
     justify-content: flex-start;
@@ -150,14 +146,15 @@ label i
     color:#0065FC;
     width: 20px;
 }
-#filtres p:hover
+#filtres p:hover, #button:hover
 {
-   transform: scale(1.05); 
+   transform: scale(1.05);
+   cursor: pointer; 
 }
 #info i
 {
     border:1px solid rgba(128,128,128,0.4); 
-    padding: 4px 10px 4px 10px;
+    padding: 5px 10px 5px 9px;
     border-radius: 100%;
     color:#0065FC;
 }
@@ -420,7 +417,7 @@ footer h5
     }
     #button
     {
-        width: 10px;
+        width: 100px;
     }
     #filtres
     {
