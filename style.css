@@ -83,10 +83,10 @@ nav li:hover
 label i
 {
     position: relative;
-    bottom: 1px;
-    height: 26px;
+    bottom: 0px;
+    height: 29px;
     background-color:#F2F2F2;
-    padding: 8px 15px 6px 15px;
+    padding: 12px 15px 6px 15px;
     margin-right: -5px;
     border-radius:10px 0px 0px 10px;
 }
@@ -99,12 +99,12 @@ label i
 #champ_de_recherche
 {
     text-indent: 5px;
-    height: 40px;
+    height: 47px;
     border:1px solid #F2F2F2; 
 }
-#button
+#button, #lens
 {
-    height: 40px;
+    height: 47px;
     margin-left: -5px;
     border-radius: 0px 10px 10px 0px;
     background-color:#0065FC;
@@ -112,6 +112,10 @@ label i
     border:none;
     padding-right: 20px;
     padding-left: 20px;
+}
+#lens
+{
+    visibility: hidden;
 }
 #filtres
 {
@@ -413,11 +417,21 @@ footer h5
     #recherche_ville
     {
         margin-top: 40px;
-        margin-bottom: -20px;
+        margin-bottom: -20x;
     }
     #button
     {
-        width: 100px;
+        visibility: hidden;
+        width: 20px;
+    }
+    #lens
+    {
+        visibility: visible;
+        margin-left: -45px;
+    }
+    #lens:hover
+    {
+        transform: scale(1.05);
     }
     #filtres
     {
@@ -460,11 +474,6 @@ footer h5
     {
         border-bottom: 3px solid #0065FC;
     }
-    label i
-    {
-        bottom: 3px;
-    }
-
     #section_1 
     {
         flex-direction: column-reverse;
