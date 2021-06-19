@@ -351,14 +351,14 @@ footer h5
         flex-direction: column;
         align-items: center;
     }
-    #onglets, #onglets_aside
-    {
-        justify-content: center;
-    }
     #onglets_aside
     {
         display: flex;
-        justify-content: flex-start;
+        justify-content:center;
+    }
+    #onglets
+    {
+        justify-content: center;
     }
     aside
     {
