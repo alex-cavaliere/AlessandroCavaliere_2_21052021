@@ -58,7 +58,7 @@ h1, h2, h3, h5, #champ_de_recherche
 h1
 {
     font-size: 23px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 h2
 {
@@ -70,7 +70,7 @@ nav strong
 }
 nav li
 {
-    padding-top: 50px;
+    padding-top: 40px;
     margin-bottom: -50px;
 }
 nav li:hover
@@ -119,8 +119,11 @@ label i
 }
 #filtres
 {
-    justify-content: flex-start;
     margin-top: 20px;
+}
+#filtres div
+{
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 #filtres p
@@ -128,9 +131,9 @@ label i
     border: 2px solid rgba(128,128,128,0.4);
     height: 20px;
     padding: 10px 30px 10px 30px;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
     font-weight: bold;
-    font-size: medium;
+    font-size: large;
     margin-left: 30px;
 }
 #filtres h3
@@ -140,7 +143,7 @@ label i
 #filtres span
 {
     background-color: #DEEBFF;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: -40px;
     padding: 13px 11px 13px 14px;
     border-radius: 100%;
@@ -191,7 +194,6 @@ figure:hover
 {
     background-color: white;
     height: auto;
-    width: 220px;
     margin-left: 32px;
 }
 .hebergements img
@@ -213,6 +215,10 @@ figure:hover
 {
     margin:30px 0px 10px 30px;
     font-size: 20px;
+}
+.hebergements
+{
+    max-width: 300px;
 }
 .hebergements figcaption
 {
@@ -295,16 +301,16 @@ aside figcaption
 }
 .onglets_activites
 {
-    width: 320px;
+    max-width: 320px;
 }
 #activites h5
 {
     margin-bottom: 20px;
     top: -10px;
 }
-#activites figure
+#activites .petite_photo
 {
-    max-width: 260px;
+    height: 150px;
 }
 #activites figcaption
 {
@@ -316,7 +322,7 @@ aside figcaption
 {
     object-fit: cover;
     height: 400px;
-    width: 240px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 footer
@@ -347,28 +353,36 @@ footer h5
     }
     #section_1
     {
-        margin-left: 10px;
         flex-direction: column;
         align-items: center;
     }
     #onglets_aside
     {
         display: flex;
-        justify-content:center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .populaires
+    {
+        width: 50%;
+    }
+    .populaires figure
+    {
+        width: 80%;
     }
     #onglets
     {
-        justify-content: center;
+        justify-content: space-around;
+    }
+    .hebergements figure
+    {
+        width: 82%;
     }
     aside
     {
         margin-top: 20px;
         max-width: 900px;
         margin-left: 0px; 
-    }
-    #onglets_aside
-    {
-        flex-wrap: wrap;
     }
     footer
     {
@@ -380,14 +394,30 @@ footer h5
     #hebergements_marseille
     {
         width: auto;
-    }  
-    #activites img
-    {
-        height: 150px;
     }
     #filtres, footer
     {
         flex-wrap: wrap;
+    }
+    #section_2
+    {
+        margin-left: -30px;
+    }
+    #activites
+    {
+        margin-left: -15px;
+    }
+    #section_2 img
+    {
+        height: 150px;
+    }
+    .hebergements figure
+    {
+        width: 90%;
+    }
+    #section_2 figure
+    {
+        width: 90%;
     }
     footer
     {
@@ -436,26 +466,33 @@ footer h5
     {
         transform: scale(1.05);
     }
-    #filtres
+    #filtres 
     {
-        flex-direction: column;
-        width: 240px;
+        font-size: 0.9em;
     }
     #filtres p
     {
-        width: 170px;
-        font-size: 0.9em;
+        padding-right: 15px;
+        font-size: 15px;
     }
-   
+    #filtres span
+    {
+        margin-right: 5px;
+    }
+    #filtres div
+    {
+        margin-left: -20px;
+    }
     #logo_reservia
     {
         position: absolute;
-        top: 54px;
+        top: 20px;
     }
     .li_3
     {
         position: absolute;
         right: 10px;
+        top: 0px;
     }
     .li_1, .li_2
     {
@@ -464,11 +501,12 @@ footer h5
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         right: 20px;
-        top: 60px;
+        top: 40px;
         width: 100%;
     }
+
     header ul
     {
         justify-content: space-between;
@@ -481,11 +519,8 @@ footer h5
     {
         flex-direction: column-reverse;
         height: auto;
-        width: auto;
-    }
-    aside h2
-    {
-        justify-content: space-between;
+        width: 100%;
+        margin-left: 0px;
     }
     aside
     {
@@ -497,9 +532,28 @@ footer h5
     {
         justify-content: center;    
     }
-    #onglets_aside figure, #onglets figure, #activites_marseille figure
+    #onglets_aside figure
     {
-        width: 240px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #onglets figure
+    {
+        width: 95%;
+    }
+    #onglets
+    {
+        margin-left: -60px;
+    }
+    #activites
+    {
+        height: auto;
+        justify-content: flex-start;
+    }
+    .populaires
+    {
+        width: 100%;
     }
     #onglets_aside figcaption, #onglets figcaption, #activites_marseille figcaption
     {
@@ -510,23 +564,9 @@ footer h5
     {
         background-color: white;
     }
-    #onglets, #onglets_activites
+    #hebergements_marseille, #activites
     {
         width: auto;
-        height: auto;
-    }
-    #hebergements_marseille, #activites, #activites_figure
-    {
-        width: auto;
-    }
-    #activites, #activites_figure
-    {
-        height: auto;
-    }
-    #activites img
-    {
-        width: 100%;
-        height: 150px;
     }
     footer
     {
