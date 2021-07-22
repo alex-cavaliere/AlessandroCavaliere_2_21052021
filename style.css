@@ -194,6 +194,7 @@ figure:hover
 {
     background-color: white;
     height: auto;
+    min-width: 230px;
     margin-left: 32px;
 }
 .hebergements img
@@ -322,7 +323,7 @@ aside figcaption
 {
     object-fit: cover;
     height: 400px;
-    width: 100%;
+    width: 240px;
     border-radius: 20px 20px 0px 0px;
 }
 footer
@@ -410,6 +411,7 @@ footer h5
     #section_2 img
     {
         height: 150px;
+        width: 288px;
     }
     .hebergements figure
     {
